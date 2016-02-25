@@ -6,6 +6,7 @@
 
 $border-e3-t: 0px solid #e3e3e3;
 $border-e3 : 1px solid #e3e3e3;
+$max-progress: 60px;
 
 .main-controls{
   .previous{
@@ -36,11 +37,12 @@ $border-e3 : 1px solid #e3e3e3;
       .current-progress{
         position: absolute;
         height: 20px;
-        width: 45px;
+        width: $max-progress;
 
         border: $border-e3-t;
         top: 50%;
         @include transform(translateY(-50%));
+        text-align: center;
 
         p{
           font-size: 13px;
@@ -54,41 +56,47 @@ $border-e3 : 1px solid #e3e3e3;
         // border: $border-e3;
         // background: red;
         top: 50%;
-        margin-left: 45px;
-        margin-right: 45px;
+        margin-left: $max-progress;
+        margin-right: $max-progress;
         @include transform(translateY(-50%));
         
         .bar-hover{
           padding-top: 15px;
           padding-bottom: 15px;
           cursor: pointer;
+          margin-left: 5px;
+          margin-right: 5px;
           
           // shown when hovered
           .progress-bar-on-hover{
             // padding-top: 2px;
             // padding-bottom: 2px;
-            border: 1px solid #b1b1b1;
-            border-radius: 10px;
 
+            background-color: #e3e3e3;
+            border-radius: 10px;
+            height: 4px;
+            
+            //how much content loaded
             .progress-bar-loaded{
               position: relative;
               // background: linear-gradient(to bottom, );
-              background: #DDE6DD;
-              height: 3px;
-              width: 50%;
+              background: #8DA0FF;
+              height: inherit;
+              width: 0;
               border-radius: 2px;
               .progress-bar-change{
                 position: absolute;
                 height: inherit;
-                width: 40px;
-                background: green;
+                width: 0;
+                border-radius: 10px;
+                background: #758CFD;
                 
 
                 .progress-bar-on{
                   position: relative;
-                  background: #062FF9;
+                  background: rgba(28, 232, 196, 0.6);
                   height: inherit;
-                  width: 20px;
+                  width: 0;
                   border-radius: 2px;
 
                   .pointer{
@@ -116,20 +124,20 @@ $border-e3 : 1px solid #e3e3e3;
       .max-progress{
         position: absolute;
         height: 20px;
-        width: 45px;
+        width: $max-progress;
         left:100%;
   
         border: $border-e3-t;
         // background: red;
         top: 50%;
         @include transform(translate(-100%, -50%));
-      
+        text-align: center;
+
         p{
           margin: 0;
           padding: 0;
           font-size: 13px;
           font-weight: bold;
-          float: right;
         }  
       }    
 

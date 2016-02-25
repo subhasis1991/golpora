@@ -66,6 +66,13 @@ $border-e3 : 1px solid #e3e3e3;
             top: 50%;
             @include transform(translateY(-50%));
           }
+
+          .glyphicon-pause{
+            font-size: 28px;
+            top: 50%;
+            @include transform(translateY(-50%));
+          }
+          
         }
 
         .icon-wrapper:hover{

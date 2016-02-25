@@ -55,16 +55,24 @@ $border-e3 : 1px solid #e3e3e3;
           border: $border-e3;
           top: 50%;
           left: 50%;
-          width: 70%;
+          width: 50px;
+          height: 50px;
           border-radius: 100px;
 
           @include transform(translate(-50%, -50%));
 
           .glyphicon-play{
             font-size: 28px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            top: 50%;
+            @include transform(translateY(-50%));
           }
+
+          .glyphicon-pause{
+            font-size: 28px;
+            top: 50%;
+            @include transform(translateY(-50%));
+          }
+          
         }
 
         .icon-wrapper:hover{

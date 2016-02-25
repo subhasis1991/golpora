@@ -13,7 +13,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
-    'ngSanitize'
+    'ngSanitize',
+    'ngAudio'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -32,4 +33,6 @@ angular
       });
   })
   .value('playList', {})
+  // .value('urlValue', 'http://sundaysuspense.in/128%20kbps/Sadashib%20er%20Hoi%20Hoi%20Kando.mp3')
+  .value('urlValue', 'http://p3.music.126.net/K0QjoMvUWloi4Tiq40z28g==/528865129033079.mp3')
   .value('viewportValue',{xs: 768, sm: 768, md: 992, lg: 1200})
