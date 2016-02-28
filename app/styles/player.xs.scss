@@ -101,55 +101,55 @@ $border-e3 : 1px solid #e3e3e3;
         }
     }
     
-    .progress-bar-wrapper{
-      position: relative;
-      float: left;
-      border-right: $border-e3;
-      width: 63.77%;
-      height: inherit;
+/*     .progress-bar-wrapper{
+  position: relative;
+  float: left;
+  border-right: $border-e3;
+  width: 63.77%;
+  height: inherit;
 
-      .current-progress{
-        position: absolute;
-        height: 20px;
-        width: 45px;
+  .current-progress{
+    position: absolute;
+    height: 20px;
+    width: 45px;
 
-        border: $border-e3;
-        // background: red;
-        top: 50%;
-        @include transform(translateY(-50%));
-      }
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    @include transform(translateY(-50%));
+  }
 
-      .progress-bar-background{
-        position: absolute;
-        height: 10px;
+  .progress-bar-background{
+    position: absolute;
+    height: 10px;
 
-        border: $border-e3;
-        // background: red;
-        top: 50%;
-        margin-left: 45px;
-        margin-right: 45px;
-        @include transform(translateY(-50%));
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    margin-left: 45px;
+    margin-right: 45px;
+    @include transform(translateY(-50%));
 
-        .progress-bar{
+    .progress-bar{
 
-        }
-      }
+    }
+  }
 
 
 
-      .max-progress{
-        position: absolute;
-        height: 20px;
-        width: 45px;
-        left:100%;
+  .max-progress{
+    position: absolute;
+    height: 20px;
+    width: 45px;
+    left:100%;
   
-        border: $border-e3;
-        // background: red;
-        top: 50%;
-        @include transform(translate(-100%, -50%));
-      }
+    border: $border-e3;
+    // background: red;
+    top: 50%;
+    @include transform(translate(-100%, -50%));
+  }
 
-    }//end progress-bar-wrapper
+}//end progress-bar-wrapper */
 
     .other-controls{
       float: left;

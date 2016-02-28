@@ -50,6 +50,7 @@ $border-e3 : 1px solid #e3e3e3;
         top: 50%;
         @include transform(translate(-50%, -50%));
         text-align: center;
+
         .icon-wrapper{
           position: relative;
           border: $border-e3;
@@ -64,13 +65,13 @@ $border-e3 : 1px solid #e3e3e3;
           .glyphicon-play{
             font-size: 28px;
             top: 50%;
-            @include transform(translateY(-50%));
+            @include transform(translate(5%,-50%));
           }
 
           .glyphicon-pause{
             font-size: 28px;
             top: 50%;
-            @include transform(translateY(-50%));
+            @include transform(translate(5%,-50%));
           }
           
         }
@@ -101,7 +102,11 @@ $border-e3 : 1px solid #e3e3e3;
           padding-bottom: 8px;
         }
     }
-
+    
+    .progress-bar-wrapper{
+      width: 63.77%;
+    }
+    
     .other-controls{
       float: left;
       // border-right: $border-e3;
